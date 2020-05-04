@@ -279,7 +279,7 @@
 16. Cluster Alignment with a Teacher for Unsupervised _Domain Adaptation_. ICCV 2019
 17. Attention Bridging Network for Knowledge Transfer. Li, Kunpeng et al. ICCV 2019
 18. Unpaired Multi-modal Segmentation via Knowledge Distillation. Dou, Qi et al. arXiv:2001.03111
-19. Multi-source Distilling Domain Adaptation. Zhao, Sicheng et al. arXiv:1911.11554
+19. ~~Multi-source Distilling Domain Adaptation. Zhao, Sicheng et al. arXiv:1911.11554~~ (跟KD没什么关系，1逐个source训分类器，2为每个source训一个encoder，将target的图映射到每一个source的feature space，通过WGAN来完成，训好的WGAN就有了计算样本间、分布间距离的能力，3从每个source domain里挑一半跟target domain接近的图finetune分类器，作者称这一步为distill个人觉得很牵强，4inference时把图过所有与source对应的encoder，再过每个source自己的分类器得到多个分类结果，这些结果加权，权重与每个source与target的W距离负相关)
 20. Creating Something from Nothing: Unsupervised Knowledge Distillation for Cross-Modal Hashing. Hu, Hengtong et al. arXiv:2004.00280
 
 ## Application of KD
