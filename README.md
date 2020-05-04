@@ -279,7 +279,7 @@
 16. Cluster Alignment with a Teacher for Unsupervised _Domain Adaptation_. ICCV 2019
 17. Attention Bridging Network for Knowledge Transfer. Li, Kunpeng et al. ICCV 2019
 18. Unpaired Multi-modal Segmentation via Knowledge Distillation. Dou, Qi et al. arXiv:2001.03111
-19. ~~Multi-source Distilling Domain Adaptation. Zhao, Sicheng et al. arXiv:1911.11554~~ (跟KD没什么关系，1逐个source训分类器，2为每个source训一个encoder，将target的图映射到每一个source的feature space，通过WGAN来完成，训好的WGAN就有了计算样本间、分布间距离的能力，3从每个source domain里挑一半跟target domain接近的图finetune分类器，作者称这一步为distill个人觉得很牵强，4inference时把图过所有与source对应的encoder，再过每个source自己的分类器得到多个分类结果，这些结果加权，权重与每个source与target的W距离负相关。总结：每个source训分类器，WGAN去align target与每个source的feature从而可以使用每个source自己的分类器，align feature可以用一般的GAN来做，但是WGAN能有更好的距离度量，这为finetune source分类器和加权提供了基础)
+19. `Multi-source Distilling Domain Adaptation. Zhao, Sicheng et al. arXiv:1911.11554 (跟KD没什么关系，1逐个source训分类器，2为每个source训一个encoder，将target的图映射到每一个source的feature space，通过WGAN来完成，训好的WGAN就有了计算样本间、分布间距离的能力，3从每个source domain里挑一半跟target domain接近的图finetune分类器，作者称这一步为distill个人觉得很牵强，4inference时把图过所有与source对应的encoder，再过每个source自己的分类器得到多个分类结果，这些结果加权，权重与每个source与target的W距离负相关。总结：每个source训分类器，WGAN去align target与每个source的feature从而可以使用每个source自己的分类器，align feature可以用一般的GAN来做，但是WGAN能有更好的距离度量，这为finetune source分类器和加权提供了基础)`
 20. Creating Something from Nothing: Unsupervised Knowledge Distillation for Cross-Modal Hashing. Hu, Hengtong et al. arXiv:2004.00280
 
 ## Application of KD
@@ -292,7 +292,7 @@
 6. Fast Human _Pose Estimation_. Zhang, Feng et al. CVPR 2019
 7. Distilling knowledge from a deep _pose_ regressor network. Saputra et al. arXiv:1908.00858 (2019)
 8. Learning Lightweight _Lane Detection_ CNNs by Self Attention Distillation. Hou, Yuenan et al. ICCV 2019
-9. ~~Structured Knowledge Distillation for _Semantic Segmentation_. Liu, Yifan et al. CVPR 2019~~ (semantic seg是一个结构性任务，所以针对性的KD就是pixel-pair similarity和holistic distillation也就是WGAN)
+9. `Structured Knowledge Distillation for _Semantic Segmentation_. Liu, Yifan et al. CVPR 2019 (semantic seg是一个结构性任务，所以针对性的KD就是pixel-pair similarity和holistic distillation也就是WGAN)`
 10. Relation Distillation Networks for _Video Object Detection_. Deng, Jiajun et al. ICCV 2019
 11. Teacher Supervises Students How to Learn From Partially Labeled Images for _Facial Landmark Detection_. Dong, Xuanyi and Yang, Yi. ICCV 2019
 12. Progressive Teacher-student Learning for Early _Action Prediction_. Wang, Xionghui et al. CVPR 2019
