@@ -288,7 +288,7 @@
 8. Learning Lightweight _Lane Detection_ CNNs by Self Attention Distillation. Hou, Yuenan et al. ICCV 2019
 9. `Structured Knowledge Distillation for _Semantic Segmentation_. Liu, Yifan et al. CVPR 2019 (semantic seg是一个结构性任务，所以针对性的KD就是pixel-pair similarity和holistic distillation也就是WGAN)`
 10. Relation Distillation Networks for _Video Object Detection_. Deng, Jiajun et al. ICCV 2019
-11. Teacher Supervises Students How to Learn From Partially Labeled Images for _Facial Landmark Detection_. Dong, Xuanyi and Yang, Yi. ICCV 2019
+11. `Teacher Supervises Students How to Learn From Partially Labeled Images for _Facial Landmark Detection_. Dong, Xuanyi and Yang, Yi. ICCV 2019 (与其说是teacher-student，不如说是actor-critic，并非将teacher的knowledge给student，只是teacher在给student的prediction打分。人脸关键点检测，有label数据和无label数据，用label数据训好若干student，再训练teacher能对这些prediction打分，groundtruth就是误差，之后student给出unlabel数据的prediction，teacher仍然可以打分，把分低的去掉，只保留好的，这些数据继续训student，循环往复)`
 12. Progressive Teacher-student Learning for Early _Action Prediction_. Wang, Xionghui et al. CVPR 2019
 13. Lightweight Image _Super-Resolution_ with Information Multi-distillation Network. Hui, Zheng et al. ICCVW 2019
 14. AWSD:Adaptive Weighted Spatiotemporal Distillation for _Video Representation_. Tavakolian, Mohammad et al. ICCV 2019
