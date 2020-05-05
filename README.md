@@ -116,11 +116,10 @@
 4. BAM! Born-Again Multi-Task Networks for Natural Language Understanding. Clark, Kevin et al. ACL 2019,short
 5. Self-Knowledge Distillation in Natural Language Processing. Hahn, Sangchul and Choi, Heeyoul. arXiv:1908.01851
 6. Rethinking Data Augmentation: Self-Supervision and Self-Distillation. Lee, Hankook et al. ICLR 2020
-7. Regularizing Predictions via Class wise Self knowledge Distillation. ICLR 2020
-8. MSD: Multi-Self-Distillation Learning via Multi-classifiers within Deep Neural Networks. arXiv:1911.09418
-9. Self-Distillation Amplifies Regularization in Hilbert Space. Mobahi, Hossein et al. arXiv:2002.05715
-10. MINILM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers. Wang, Wenhui et al. arXiv:2002.10957
-11. Regularizing Class-wise Predictions via Self-knowledge Distillation. arXiv:2003.13964
+7. MSD: Multi-Self-Distillation Learning via Multi-classifiers within Deep Neural Networks. arXiv:1911.09418
+8. Self-Distillation Amplifies Regularization in Hilbert Space. Mobahi, Hossein et al. arXiv:2002.05715
+9. MINILM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers. Wang, Wenhui et al. arXiv:2002.10957
+10. `Regularizing Class-wise Predictions via Self-knowledge Distillation. cvpr 2020 (用x同类的其他sample的预测结果来regularize网络关于x的logits，实质就是要求同类的所有图像之间的KL-div小，好处是：这是很好的regularization同时可以减小类内variance)`
 
 ### Structured Knowledge
 
