@@ -28,7 +28,7 @@
 
 ### Knowledge from logits
 
-1. Distilling the knowledge in a neural network. Hinton et al. arXiv:1503.02531
+1. `Distilling the knowledge in a neural network. Hinton et al. arXiv:1503.02531 (KD，transfer logits)`
 2. Learning from Noisy Labels with Distillation. Li, Yuncheng et al. ICCV 2017
 3. Training Deep Neural Networks in Generations:A More Tolerant Teacher Educates Better Students. arXiv:1805.05551
 4. Knowledge distillation by on-the-fly native ensemble. Lan, Xu et al. NIPS 2018
@@ -38,12 +38,12 @@
 8. On Knowledge Distillation from Complex Networks for Response Prediction. Arora, Siddhartha et al. NAACL 2019
 9. On the Efficacy of Knowledge Distillation. Cho, Jang Hyun and Hariharan, Bharath. arXiv:1910.01348. ICCV 2019
 10. Revisit Knowledge Distillation: a Teacher-free Framework. Yuan, Li et al. arXiv:1909.11723
-11. Improved Knowledge Distillation via Teacher Assistant: Bridging the Gap Between Student and Teacher. Mirzadeh et al. arXiv:1902.03393
+11. `Improved Knowledge Distillation via Teacher Assistant: Bridging the Gap Between Student and Teacher. Mirzadeh et al. arXiv:1902.03393 (T和S容量差异过大时，加一个medium size的model过渡)`
 12. Ensemble Distribution Distillation. ICLR 2020
 13. Noisy Collaboration in Knowledge Distillation. ICLR 2020
 14. On Compressing U-net Using Knowledge Distillation. arXiv:1812.00249
 15. Distillation-Based Training for Multi-Exit Architectures. Phuong, Mary and Lampert, Christoph H. ICCV 2019
-16. Self-training with Noisy Student improves ImageNet classification. Xie, Qizhe et al.(Google) CVPR 2020
+16. `Self-training with Noisy Student improves ImageNet classification. Xie, Qizhe et al.(Google) CVPR 2020 (teacher训好后输入大量无标签图像，产生的output作伪标签，跟原始数据一起训student，给student的训练注入大量噪声，对robustness有很大帮助)`
 17. Variational Student: Learning Compact and Sparser Networks in Knowledge Distillation Framework. arXiv:1910.12061
 18. Preparing Lessons: Improve Knowledge Distillation with Better Supervision. arXiv:1911.07471
 19. Adaptive Regularization of Labels. arXiv:1908.05474
@@ -67,20 +67,20 @@
 
 ### Knowledge from intermediate layers
 
-1. Fitnets: Hints for thin deep nets. Romero, Adriana et al. arXiv:1412.6550
-2. Paying more attention to attention: Improving the performance of convolutional neural networks via attention transfer. Zagoruyko et al. ICLR 2017
+1. `Fitnets: Hints for thin deep nets. Romero, Adriana et al. arXiv:1412.6550 (transfer feature)`
+2. `Paying more attention to attention: Improving the performance of convolutional neural networks via attention transfer. Zagoruyko et al. ICLR 2017 (学attention)`
 3. Knowledge Projection for Effective Design of Thinner and Faster Deep Neural Networks. Zhang, Zhi et al. arXiv:1710.09505
-4. A Gift from Knowledge Distillation: Fast Optimization, Network Minimization and Transfer Learning. Yim, Junho et al. CVPR 2017
-5. Paraphrasing complex network: Network compression via factor transfer. Kim, Jangho et al. NIPS 2018
+4. `A Gift from Knowledge Distillation: Fast Optimization, Network Minimization and Transfer Learning. Yim, Junho et al. CVPR 2017 (学中间层输入和输出的gram矩阵，paper所谓的解题思路)`
+5. `Paraphrasing complex network: Network compression via factor transfer. Kim, Jangho et al. NIPS 2018 (teacher端训个auto-encoder，得到的feature更容易被student学到)`
 6. Knowledge transfer with jacobian matching. ICML 2018
-7. Self-supervised knowledge distillation using singular value decomposition. Lee, Seung Hyun et al. ECCV 2018
+7. `Self-supervised knowledge distillation using singular value decomposition. Lee, Seung Hyun et al. ECCV 2018 (学SVD截断后的feature)`
 8. Learning Deep Representations with Probabilistic Knowledge Transfer. Passalis et al. ECCV 2018
 9. Variational Information Distillation for Knowledge Transfer. Ahn, Sungsoo et al. CVPR 2019
 10. Knowledge Distillation via Instance Relationship Graph. Liu, Yufan et al. CVPR 2019
 11. Knowledge Distillation via Route Constrained Optimization. Jin, Xiao et al. ICCV 2019
 12. Similarity-Preserving Knowledge Distillation. Tung, Frederick, and Mori Greg. ICCV 2019
 13. MEAL: Multi-Model Ensemble via Adversarial Learning. Shen,Zhiqiang, He,Zhankui, and Xue Xiangyang. AAAI 2019
-14. A Comprehensive Overhaul of Feature Distillation. Heo, Byeongho et al. ICCV 2019
+14. `A Comprehensive Overhaul of Feature Distillation. Heo, Byeongho et al. ICCV 2019 (学pre-activation过了margin-relu之后的东西)`
 15. Feature-map-level Online Adversarial Knowledge Distillation. ICLR 2020
 16. Distilling Object Detectors with Fine-grained Feature Imitation. ICLR 2020
 17. Knowledge Squeezed Adversarial Network Compression. Changyong, Shu et al. AAAI 2020
@@ -91,7 +91,7 @@
 22. Improving the Adversarial Robustness of Transfer Learning via Noisy Feature Distillation. Chin, Ting-wu et al. arXiv:2002.02998
 23. Knapsack Pruning with Inner Distillation. Aflalo, Yonathan et al. arXiv:2002.08258
 24. Residual Knowledge Distillation. Gao, Mengya et al. arXiv:2002.09168
-25. Knowledge distillation via adaptive instance normalization. Yang, Jing et al. arXiv:2003.04289
+25. `Knowledge distillation via adaptive instance normalization. Yang, Jing et al. arXiv:2003.04289 (学BN)`
 26. Bert-of-Theseus: Compressing bert by progressive module replacing. Xu, Canwen et al. arXiv:2002.02925 [[code][2.27]]
 
 ### Graph-based
@@ -115,7 +115,7 @@
 3. Learning Lightweight Lane Detection CNNs by Self Attention Distillation. Hou, Yuenan et al. ICCV 2019
 4. BAM! Born-Again Multi-Task Networks for Natural Language Understanding. Clark, Kevin et al. ACL 2019,short
 5. Self-Knowledge Distillation in Natural Language Processing. Hahn, Sangchul and Choi, Heeyoul. arXiv:1908.01851
-6. Rethinking Data Augmentation: Self-Supervision and Self-Distillation. Lee, Hankook et al. ICLR 2020
+6. `Rethinking Data Augmentation: Self-Supervision and Self-Distillation. Lee, Hankook et al. ICLR 2020 (被拒的，先学一个原始分类与SS变换分类，两种分类的笛卡尔积的大分类任务，再把这个模型distill给一个普通模型)`
 7. MSD: Multi-Self-Distillation Learning via Multi-classifiers within Deep Neural Networks. arXiv:1911.09418
 8. Self-Distillation Amplifies Regularization in Hilbert Space. Mobahi, Hossein et al. arXiv:2002.05715
 9. MINILM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers. Wang, Wenhui et al. arXiv:2002.10957
@@ -123,7 +123,7 @@
 
 ### Structured Knowledge
 
-1. Paraphrasing Complex Network:Network Compression via Factor Transfer. Kim, Jangho et al. NIPS 2018
+1. `Paraphrasing Complex Network:Network Compression via Factor Transfer. Kim, Jangho et al. NIPS 2018`
 2. Relational Knowledge Distillation.  Park, Wonpyo et al. CVPR 2019
    <!-- * 通过对输出embedding表示构建了instance之间的二阶距离关系和三届角度关系，作为一种知识引导student学习 -->
 3. Knowledge Distillation via Instance Relationship Graph. Liu, Yufan et al. CVPR 2019
@@ -163,7 +163,7 @@
 16. Compressing GANs using Knowledge Distillation. Aguinaldo, Angeline et al. arXiv:1902.00159
 17. Feature-map-level Online Adversarial Knowledge Distillation. ICLR 2020
 18. MineGAN: effective knowledge transfer from GANs to target domains with few images. Wang, Yaxing et al. arXiv:1912.05270
-19. Distilling portable Generative Adversarial Networks for Image Translation. Chen, Hanting et al. AAAI 2020
+19. `Distilling portable Generative Adversarial Networks for Image Translation. Chen, Hanting et al. AAAI 2020 (就是用KD训个小GAN)`
 20. GAN Compression: Efficient Architectures for Interactive Conditional GANs. Junyan Zhu et al. CVPR 2020 [[code][8.20]]
 
 ## KD + Meta-learning
@@ -227,18 +227,13 @@
 4. Deep Model Compression: Distilling Knowledge from Noisy Teachers.  Sau, Bharat Bhusan et al. arXiv:1610.09650v2 
 5. Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results. Tarvainen, Antti and Valpola, Harri. NIPS 2017
 6. Born-Again Neural Networks. Furlanello, Tommaso et al. ICML 2018
-   <!-- * 教师网络和学生网络具有同样结果，多个网络交替依次训练，最终结果进行平均融合 -->
-7. Deep Mutual Learning. Zhang, Ying et al. CVPR 2018
-   <!-- * 多个学生模型之间同时互相学习 -->
+7. `Deep Mutual Learning. Zhang, Ying et al. CVPR 2018 (多个学生模型之间同时互相学习)`
 8. Knowledge distillation by on-the-fly native ensemble. Lan, Xu et al. NIPS 2018
 9. Collaborative learning for deep neural networks. Song, Guocong and Chai, Wei. NIPS 2018
 10. Data Distillation: Towards Omni-Supervised Learning. Radosavovic, Ilija et al. CVPR 2018
 11. Multilingual Neural Machine Translation with Knowledge Distillation. ICLR 2019
-    <!-- * 多个teacher（一个teacher一个语言对），简单融合。 -->
 12. Unifying Heterogeneous Classifiers with Distillation. Vongkulbhisal et al. CVPR 2019
-    <!-- * 有多个不完全一样场景下的分类器（分类目标不尽相同），如何将它们统一起来，构造一个总的分类器：认为每一个classifier同等重要，都要去拟合它们。 -->
 13. Distilled Person Re-Identification: Towards a More Scalable System. Wu, Ancong et al. CVPR 2019
-    <!-- * 知识不再是soft-label，而是similarity matrix。权重引入是teacher-level的，而不是instance-level的。 -->
 14. Diversity with Cooperation: Ensemble Methods for Few-Shot Classification. Dvornik, Nikita et al. ICCV 2019
 15. Model Compression with Two-stage Multi-teacher Knowledge Distillation for Web Question Answering System. Yang, Ze et al. WSDM 2020 
 16. FEED: Feature-level Ensemble for Knowledge Distillation. Park, SeongUk and Kwak, Nojun. arXiv:1909.10754(AAAI20 pre)
