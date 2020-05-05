@@ -99,7 +99,7 @@
 2. Graph Representation Learning via Multi-task Knowledge Distillation. arXiv:1911.05700
 3. Deep geometric knowledge distillation with graphs. arXiv:1911.03080
 4. Better and faster: Knowledge transfer from multiple self-supervised learning tasks via graph distillation for video classification. IJCAI 2018
-5. Distillating Knowledge from Graph Convolutional Networks. Yang, Yiding et al. CVPR 2020
+5. `Distillating Knowledge from Graph Convolutional Networks. Yang, Yiding et al. CVPR 2020 (GCN的KD，GCN中重要的是node之间的关系，所以KD就transfer这个关系，说白了就是每个node跟所有neighbor算距离然后做softmax，distill这个概率)`
 
 ### Mutual Information
 
