@@ -315,12 +315,11 @@
 35. Distill Knowledge From NRSfM for Weakly Supervised _3D Pose_ Learning. Wang Chaoyang et al. ICCV 2019
 36. KD-MRI: A knowledge distillation framework for _image reconstruction_ and image restoration in MRI workflow. Murugesan et al. MIDL 2020
 37. Geometry-Aware Distillation for Indoor _Semantic Segmentation_. Jiao, Jianbo et al. CVPR 2019
-38. Teacher Supervises Students How to Learn From Partially Labeled Images for _Facial Landmark Detection_. ICCV 2019
-39. Distill Image _Dehazing_ with Heterogeneous Task Imitation. Hong, Ming et al. CVPR 2020
-40. Knowledge Distillation for _Action Anticipation_ via Label Smoothing. Camporese et al. arXiv:2004.07711
-41. More Grounded Image Captioning by Distilling Image-Text Matching Model. Zhou, Yuanen et al. CVPR 2020
-42. Distilling Knowledge from Refinement in Multiple Instance Detection Networks. Zeni, Luis Felipe & Jung, Claudio. arXiv:2004.10943
-43. A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data. SIGIR 2020
+38. Distill Image _Dehazing_ with Heterogeneous Task Imitation. Hong, Ming et al. CVPR 2020
+39. Knowledge Distillation for _Action Anticipation_ via Label Smoothing. Camporese et al. arXiv:2004.07711
+40. More Grounded Image Captioning by Distilling Image-Text Matching Model. Zhou, Yuanen et al. CVPR 2020
+41. Distilling Knowledge from Refinement in Multiple Instance Detection Networks. Zeni, Luis Felipe & Jung, Claudio. arXiv:2004.10943
+42. A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data. SIGIR 2020
 
 ### for NLP
 1. Patient Knowledge Distillation for BERT Model Compression. Sun, Siqi et al. arXiv:1908.09355
