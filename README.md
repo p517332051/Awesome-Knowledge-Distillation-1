@@ -184,7 +184,7 @@
 3. DAFL:Data-Free Learning of Student Networks. ICCV 2019
 4. Zero-shot Knowledge Transfer via Adversarial Belief Matching. Micaelli, Paul and Storkey, Amos. NIPS 2019
 5. Dream Distillation: A Data-Independent Model Compression Framework. Kartikeya et al. ICML 2019
-6. Dreaming to Distill: Data-free Knowledge Transfer via DeepInversion. Yin, Hongxu et al. CVPR 2020
+6. `Dreaming to Distill: Data-free Knowledge Transfer via DeepInversion. Yin, Hongxu et al. CVPR 2020 (与7类似，其实data-free的paper核心都是如何生成数据，这篇用的DeepDream的升级版，deepdream本身是用label反推input，同时加上了TV loss和L2 loss来正则化input，这篇升级成了deep inversion，其实就是加了另外两个正则项，1是要求生成的图的bn统计量与原teacher相同，2是要求生成的图能增加student和teacher的JS散度，功能类似7中的generator，生成这些数据后再用常规的KD即可。生成挺慢的，140k ImageNet的图，需要8块V100跑一天。图相对逼真)`
 7. `Data-Free Adversarial Distillation. Fang, Gongfan et al. CVPR 2020 (用GAN产生data来训student，整体是个minmax game，一方面对于产生的data，优化student使得与teacher的discrepancy减小，也即mimic，另一方面，优化generator使之产生增大discrepancy的data，student不断逼近老师，generator也不断生成还没有被学会的knowledge，比较有趣的一点是generator生成的image和label跟真实数据之间差异很大)`
 8. The Knowledge Within: Methods for Data-Free Model Compression. Haroush, Matan et al. arXiv:1912.01274
 9. Knowledge Extraction with No Observable Data. Yoo, Jaemin et al. NIPS 2019 [[code][10.9]]
