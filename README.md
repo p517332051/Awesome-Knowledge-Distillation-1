@@ -186,7 +186,7 @@
 6. `Dreaming to Distill: Data-free Knowledge Transfer via DeepInversion. Yin, Hongxu et al. CVPR 2020 (与7类似，其实data-free的paper核心都是如何生成数据，这篇用的DeepDream的升级版，deepdream本身是用label反推input，同时加上了TV loss和L2 loss来正则化input，这篇升级成了deep inversion，其实就是加了另外两个正则项，1是要求生成的图的bn统计量与原teacher相同，2是要求生成的图能增加student和teacher的JS散度，功能类似7中的generator，生成这些数据后再用常规的KD即可。生成挺慢的，140k ImageNet的图，需要8块V100跑一天。图相对逼真)`
 7. `Data-Free Adversarial Distillation. Fang, Gongfan et al. CVPR 2020 (用GAN产生data来训student，整体是个minmax game，一方面对于产生的data，优化student使得与teacher的discrepancy减小，也即mimic，另一方面，优化generator使之产生增大discrepancy的data，student不断逼近老师，generator也不断生成还没有被学会的knowledge，比较有趣的一点是generator生成的image和label跟真实数据之间差异很大)`
 8. The Knowledge Within: Methods for Data-Free Model Compression. Haroush, Matan et al. arXiv:1912.01274
-9. Knowledge Extraction with No Observable Data. Yoo, Jaemin et al. NIPS 2019 [[code][10.9]]
+9. `Knowledge Extraction with No Observable Data. Yoo, Jaemin et al. NIPS 2019 [[code][10.9]] (类似GAN结构，G的输入是y，产生x，x送入teacher应该再得到y，但只这样会导致多样性不足，同一个y产生一样的x，为增加diversity，G的输入还包括一个latent z，同时再增加一个decoder从x还原z，确保z与x的对应性，为进一步确保diversity，还要求一个batch产生的图尽量不同)`
 10. Data-Free Knowledge Amalgamation via Group-Stack Dual-GAN. CVPR 2020
 11. DeGAN : Data-Enriching GAN for Retrieving Representative Samples from a Trained Classifier. Addepalli, Sravanti et al. arXiv:1912.11960
 12. Generative Low-bitwidth Data Free Quantization. Xu, Shoukai et al. arXiv:2003.03603
