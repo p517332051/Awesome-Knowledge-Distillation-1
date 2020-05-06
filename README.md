@@ -180,7 +180,7 @@
 ## Data-free KD
 1. Data-Free Knowledge Distillation for Deep Neural Networks. NIPS 2017
 2. Zero-Shot Knowledge Distillation in Deep Networks. ICML 2019
-3. DAFL:Data-Free Learning of Student Networks. ICCV 2019
+3. `DAFL:Data-Free Learning of Student Networks. ICCV 2019 (出发点：试图生成原始数据分布，用GAN来做，但是因为缺少原始数据，所以无法训D，那么用训好的teacher做D，但teacher本身不是用来判别真假的，所以G的目标就是生成一些能让teacher产生某些output的图，对这些图有3个要求，一是teacher能给出one-hot的output，二是分类前的feature响应要尽量大，也就是L1大，三是类间尽量平均。有图之后，再用KD即可，但是不用ce-loss。G与student的训练交替进行)`
 4. Zero-shot Knowledge Transfer via Adversarial Belief Matching. Micaelli, Paul and Storkey, Amos. NIPS 2019
 5. Dream Distillation: A Data-Independent Model Compression Framework. Kartikeya et al. ICML 2019
 6. `Dreaming to Distill: Data-free Knowledge Transfer via DeepInversion. Yin, Hongxu et al. CVPR 2020 (与7类似，其实data-free的paper核心都是如何生成数据，这篇用的DeepDream的升级版，deepdream本身是用label反推input，同时加上了TV loss和L2 loss来正则化input，这篇升级成了deep inversion，其实就是加了另外两个正则项，1是要求生成的图的bn统计量与原teacher相同，2是要求生成的图能增加student和teacher的JS散度，功能类似7中的generator，生成这些数据后再用常规的KD即可。生成挺慢的，140k ImageNet的图，需要8块V100跑一天。图相对逼真)`
