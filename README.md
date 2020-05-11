@@ -16,7 +16,7 @@
   - [KD + AutoML](#kd--automl)
   - [KD + RL](#kd--rl)
   - [Multi-teacher KD](#multi-teacher-kd)
-  - [Knowledge Amalgamation（KA
+  - [Knowledge Amalgamation]（KA)
   - [Cross-modal KD & DA](#cross-modal-kd--da)
   - [Application of KD](#application-of-kd)
   - [Model Pruning or Quantization](#model-pruning-or-quantization)
