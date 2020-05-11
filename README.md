@@ -1,6 +1,7 @@
 # Awesome Knowledge-Distillation
 
 - [Awesome Knowledge-Distillation](#awesome-knowledge-distillation)
+  - [Efficient KD](#efficient-kd)
   - [Different forms of knowledge](#different-forms-of-knowledge)
     - [Knowledge from logits](#knowledge-from-logits)
     - [Knowledge from intermediate layers](#knowledge-from-intermediate-layers)
@@ -19,6 +20,10 @@
   - [Application of KD](#application-of-kd)
   - [Model Pruning or Quantization](#model-pruning-or-quantization)
   - [Other](#other)
+
+## Efficient KD
+
+1. Neural Networks Are More Productive Teachers Than Human Raters: Active Mixup for Data-Efficient Knowledge Distillation from a Blackbox Model. CVPR2020 (teacher是黑盒，假设有少部分unlabel数据，通过mixup扩充，用active learning从mixup得到的pool里选取student最不确定的那一部分放入training set，query teacher来获得这部分数据的soft label)
 
 ## Different forms of knowledge
 
