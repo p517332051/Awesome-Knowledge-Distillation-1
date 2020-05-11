@@ -4,7 +4,7 @@
   - [Different forms of knowledge](#different-forms-of-knowledge)
     - [Knowledge from logits](#knowledge-from-logits)
     - [Knowledge from intermediate layers](#knowledge-from-intermediate-layers)
-    - [Knowledge from Relations]
+    - [Knowledge from Relations](#what)
     - [Graph-based](#graph-based)
     - [Mutual Information](#mutual-information)
     - [Self-KD](#self-kd)
@@ -14,7 +14,7 @@
   - [KD + AutoML](#kd--automl)
   - [KD + RL](#kd--rl)
   - [Multi-teacher KD](#multi-teacher-kd)
-  - [Knowledge Amalgamation]（KA)
+  - [Knowledge Amalgamation]（#fuck)
   - [Cross-modal KD & DA](#cross-modal-kd--da)
   - [Application of KD](#application-of-kd)
   - [Model Pruning or Quantization](#model-pruning-or-quantization)
