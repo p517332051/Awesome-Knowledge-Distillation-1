@@ -10,19 +10,17 @@
     - [Mutual Information](#mutual-information)
     - [Self-KD](#self-kd)
     - [Structured Knowledge](#structured-knowledge)
-    - [Privileged Information](#privileged-information)
   - [KD + GAN](#kd--gan)
   - [KD + Meta-learning](#kd--meta-learning)
   - [Data-free KD](#data-free-kd)
   - [KD + AutoML](#kd--automl)
   - [KD + RL](#kd--rl)
   - [Multi-teacher KD](#multi-teacher-kd)
-    - [Knowledge Amalgamation（KA) - zju-VIPA](#knowledge-amalgamationka---zju-vipa)
+  - [Knowledge Amalgamation（KA
   - [Cross-modal KD & DA](#cross-modal-kd--da)
   - [Application of KD](#application-of-kd)
-    - [for NLP](#for-nlp)
   - [Model Pruning or Quantization](#model-pruning-or-quantization)
-  - [Beyond](#beyond)
+  - [Other](#other)
 
 ## Different forms of knowledge
 
