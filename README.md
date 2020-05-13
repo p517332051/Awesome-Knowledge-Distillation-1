@@ -105,5 +105,5 @@
 
 ## Other
 
-1. Explaining Knowledge Distillation by Quantifying the Knowledge. [Zhang, Quanshi][18.13] et al. CVPR 2020
+1. Explaining Knowledge Distillation by Quantifying the Knowledge. CVPR 2020 (基于bottleneck信息论，定义了visual concepts的概念，即视觉要素，通常的视觉要素定义为object上的一些有语义的parts，可以把这些concepts理解成每层的关键信息。paper提出3个假设，1：KD的student能学到更多visual concepts，2：KD的student能学的更快，就是更快地达到`自己的`的concept数量峰值，快的定义是达到峰值时weight的累计变化，同时这个累计变化在图像间方差更小，说明针对所有的图，KD在`同时`学，3：KD的detour更小，也就是不走弯路，为此定义的metric是最终model的concept除以历史所有concept的并集，表征了历史上学到过最后保留下来的concept，该值大说明少走了detour。这些metric能否作为定义效率的metric？concept峰值、达到峰值的速度、concept保留率，这些metric跟accuracy是不是高度相关？acc好的这些都好？问题在于这个paper没开源)
 
